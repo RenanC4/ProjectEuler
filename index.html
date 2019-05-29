@@ -19,18 +19,18 @@
     function problem2(){
         let a = 1;
         let b = 2;
+        let auxiliar = 2;
         let soma = 0;
-        while (b < 4000000) {
-            b =  b + a;
-            b % 2 == 0 ? soma += + b : soma;
+
+        while (auxiliar < 4000000) {
+            auxiliar =  a + b;
+            soma += auxiliar * (auxiliar%2);
             a = b;
-            console.log(a,b)
-           
+            b = auxiliar;
         }
-        console.log(soma);
-    }
-            
-    problem2();
+    //console.log(soma);
+    }   
+    //problem2();
 
 </script>
 </body>
